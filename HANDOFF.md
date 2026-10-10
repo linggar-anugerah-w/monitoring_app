@@ -64,7 +64,17 @@ to the child around age 11 so the child understands it as a safeguard.
 - Screenshot/image capture as the primary signal — **shelved** in favour of domain + safety
   classification (revisit later only with expert input and transparently).
 
-## Immediate next step: field research (scope settled via grilling rounds 1–2; awaiting go)
+## Immediate next step: field research (in progress)
+
+**Progress:** front 1 ✅ (`research/01-family-context.md`) · fronts 2–5 pending (run one at a
+time; user reviews between fronts).
+
+**Front 1 headline:** Indonesian children are online on **Android phones** (students: 86% phone
+vs. 20% computer; ~5% computer at elementary level), mostly **inside apps** (YouTube, TikTok,
+games, WhatsApp), and young children often use a **parent's/shared phone**. → points to an
+**Android-first, app-level** core signal; browser extension likely parked. PP Tunas
+(under-16 restriction on YouTube/TikTok/FB/IG/Threads/X/Bigo Live/Roblox) took effect
+28 Mar 2026.
 
 ### Research scope decisions
 - **Purpose:** research is **decision-driving**. Every front ends with a "therefore we decide X"
@@ -131,6 +141,10 @@ Then bring findings back and turn them into product decisions.
 - **Q9** Jurisdiction — *settled for research:* Indonesia, own-family use; publish-time
   compliance (PSE, app stores) as a light checklist; GDPR/COPPA/UK AADC as reference only.
 - **Q10** Confirm the differentiation axis (relationship-first + local fit recommended).
+- **Q11** *(new, from front 1)* Shared devices: young children often use a parent's phone.
+  Support only the child's own device, or a separate Android user/profile per child?
+- **Q12** *(new, from front 1)* For own-family use: what device(s) does your child actually use
+  (own Android phone? shared? laptop?) — this decides Q7 for your case.
 - Later (blocked on Q6/Q7): daily/monthly report format + PDF; screen-time tracking;
   classification source; data retention.
 
