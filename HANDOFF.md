@@ -38,6 +38,10 @@ to the child around age 11 so the child understands it as a safeguard.
 - **Audience:** a single parent monitoring their own child.
 - **Child:** under 17; age derived from **birth year only**.
 - **Posture:** **transparent / known to child** (covert capture is rejected and out of scope).
+- **Product direction (Q1):** the **transparent, on-device, co-viewable** middle path — richer
+  signals than bare domains (app/site usage, categories, screen-time) but **no covert capture and
+  no silent screen video**. The GitHub Issue #1 "Parental Phone Monitor" PRD (covert, continuous
+  screen recording) is **rejected and realigned** — see `PRD.md`.
 - **Status:** early **prototype**; the user intends to consult child-safety experts to make it
   more of a safeguard than a monitor.
 
@@ -79,6 +83,7 @@ Then bring findings back and turn them into product decisions.
   classification source; data retention.
 
 ## Project state
-- Repo is otherwise empty (only `LICENSE` and a stub `README.md`). No code yet.
+- Aligned PRD now lives in `PRD.md` (child-safety / transparency-first; realigns Issue #1).
 - Glossary of terms: see `CONTEXT.md`.
+- No code yet.
 - Working branch: `claude/ecstatic-wright-rhpvb3`.
