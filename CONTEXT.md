@@ -28,3 +28,10 @@ surveillance. See `HANDOFF.md` for the full guardrails.
   for reporting.
 - **Safeguard (vs. monitor)** — the product's intended identity: it should help protect and start
   conversations, not merely report on the child. To be sharpened with child-safety experts.
+- **Co-viewable** — the child can see the same activity and classifications the parent sees
+  (from `PRD.md`). Whether this helps is an open research question.
+- **Harm category** — a kind of online risk the safety classification flags (e.g. judi online /
+  online gambling, pornography, cyberbullying, grooming, scams, pinjol / illegal online loans).
+  The taxonomy should reflect harms prevalent in Indonesia, not only US-centric categories.
+- **Own-family use** — the current distribution model: the parent installs the app for their own
+  child; it is not published to an app store.

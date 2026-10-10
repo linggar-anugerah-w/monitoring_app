@@ -39,6 +39,11 @@ to the child around age 11 so the child understands it as a safeguard.
 - **Child:** under 17; age derived from **birth year only**.
 - **Posture:** **transparent / known to child** (covert capture is rejected and out of scope).
 - **Commercial model:** **personal/family project, free** — not a commercial product.
+- **Distribution:** **own family only** for now (not published to a store); public free
+  distribution possibly later.
+- **Platform tension (to resolve via research):** `PRD.md` assumes an **Android** child app;
+  this file's earlier recommendation was a **desktop browser extension**. Research front 1
+  (family context) + 5 (technical) decide Q7.
 - **Product direction (Q1):** the **transparent, on-device, co-viewable** middle path — richer
   signals than bare domains (app/site usage, categories, screen-time) but **no covert capture and
   no silent screen video**. The GitHub Issue #1 "Parental Phone Monitor" PRD (covert, continuous
@@ -59,37 +64,62 @@ to the child around age 11 so the child understands it as a safeguard.
 - Screenshot/image capture as the primary signal — **shelved** in favour of domain + safety
   classification (revisit later only with expert input and transparently).
 
-## Immediate next step: field research (scope being grilled — round 1 settled, round 2 open)
+## Immediate next step: field research (scope settled via grilling rounds 1–2; awaiting go)
 
-### Research scope decisions (grilling round 1)
+### Research scope decisions
 - **Purpose:** research is **decision-driving**. Every front ends with a "therefore we decide X"
   memo against specific open questions (Q6 core signal, Q7 platform, Q10 differentiation,
   classification source, data retention). Q6/Q7 stay provisional until research returns.
+- **Distribution:** **own family only** for now (self-installed, not published to a store).
+  Public free distribution is a possible later step, so store/PSE compliance is researched only
+  as a light "before you publish" checklist.
 - **Commercial model:** **personal/family project, free.** No pricing / willingness-to-pay
   research. Classification must use **free/open sources** (no paid category APIs).
 - **Method:** **desk research only** (web sources). No parent interviews or expert-contact list
   in this pass.
+- **Execution:** **sequential, one front at a time, in the main session** (no parallel
+  sub-agents), so the user can review/steer between fronts.
 - **Sources:** Indonesian- and English-language sources. Every claim cited; official sources
   (government, AAP, eSafety, peer-reviewed) outrank blogs; sources older than ~3 years flagged
   as dated.
-- **Output:** `research/` folder in the repo — one markdown file per front (findings, sources,
-  "decisions this informs"), plus `research/SUMMARY.md` that feeds back into this file.
+- **Depth:** ~2–4 pages and 10–20 cited sources per front, each ending in a "decisions this
+  informs" section; `SUMMARY.md` at most one page.
+- **Output:** `research/` folder in the repo — one markdown file per front, plus
+  `research/SUMMARY.md` that feeds back into this file.
 
-### Research fronts (priority order)
-1. **Indonesian family context** *(added in round 1; gates Q7)* — what devices Indonesian kids
-   actually use (Android dominance, shared devices), app vs. browser usage, parental mediation
-   attitudes. No willingness-to-pay.
-2. **Competitive landscape** — **Indonesian options only** for now (ISP parental controls e.g.
-   Telkomsel/IndiHome, TRUST+/Internet Positif, Nawala and similar DNS filters): features and
-   *where they fail parents/kids*.
-3. **Child-safety & developmental evidence** — AAP, eSafety commissioners, academic studies on
-   monitoring-vs-trust, age-appropriateness, what actually keeps kids safer.
-4. **Legal & privacy** *(settles Q9)* — deep on **Indonesia** (UU PDP incl. parental consent
-   for children's data, PP Tunas / PP 17/2025 applicability, PSE registration, individual vs.
-   entity) and **Google Play / App Store** parental-control policy; **light reference skim** of
-   GDPR / COPPA / UK Age-Appropriate Design Code for good practice.
-5. **Technical / classification** — free/open site-safety classification methods, accuracy,
-   latency (~seconds target).
+### Research fronts (run in this order)
+1. **Indonesian family context** (`research/01-family-context.md`; gates Q7) — answer, by age
+   band (6–9, 10–12, 13–16) where data allows:
+   1. device mix (Android / iOS / laptop);
+   2. own vs. shared family device;
+   3. age of first phone;
+   4. top apps and app-vs-browser share of time;
+   5. typical daily screen time;
+   6. the most prevalent online harms in Indonesia (judi online, pornography, cyberbullying,
+      grooming, scams, pinjol) — feeds the classification taxonomy;
+   7. how Indonesian parents mediate today, incl. use of TRUST+/ISP filters.
+2. **Competitive landscape** (`research/02-competitors.md`) — **Indonesian options only**
+   (ISP parental controls e.g. Telkomsel/IndiHome, TRUST+/Internet Positif, Nawala and similar
+   DNS filters) **plus Google Family Link** as the de-facto Android baseline: features and *where
+   they fail parents/kids*.
+3. **Child-safety & developmental evidence** (`research/03-child-safety-evidence.md`):
+   1. effects of monitoring on safety and trust, and whether transparency changes them;
+   2. evidence for/against **disclosure at ~age 11** (an untested assumption);
+   3. age-appropriate autonomy and how oversight should taper by age;
+   4. which report formats lead parents to helpful action (conversation prompts, co-viewing);
+   5. effects of **co-viewable** reports (the PRD's model; an untested assumption).
+4. **Legal & privacy** (`research/04-legal-privacy.md`; settles Q9) — for **own-family use**:
+   UU PDP duties when processing one's own child's data, PP Tunas / PP 17/2025 applicability.
+   **Light "before you publish" checklist:** PSE registration, individual vs. entity, Google
+   Play / App Store parental-control policy. **Reference skim:** GDPR / COPPA / UK AADC for good
+   practice.
+5. **Technical / classification** (`research/05-technical.md`) — covers **both** an Android
+   child app (UsageStatsManager, AccessibilityService for browser domain, local VPN/DNS) **and**
+   a desktop browser extension, incl. Google Play restrictions on Accessibility/VPN use.
+   Classification candidates: open category lists (e.g. UT1 Toulouse), TRUST+ list, free family
+   DNS, app content ratings (for apps with no domain), small on-device model. Ranked by:
+   **(i) privacy** (does the child's browsing leave the device to a third party?),
+   (ii) Indonesian site/app coverage, (iii) accuracy, (iv) latency (~seconds), (v) offline use.
 
 Then bring findings back and turn them into product decisions.
 
@@ -98,8 +128,8 @@ Then bring findings back and turn them into product decisions.
   screenshots.
 - **Q7** Confirm v1 platform (browser extension recommended; Android/iOS later — iOS is heavily
   restricted).
-- **Q9** Jurisdiction — *settled for research:* Indonesia (deep) + app-store policy; GDPR/COPPA/
-  UK AADC as light reference only.
+- **Q9** Jurisdiction — *settled for research:* Indonesia, own-family use; publish-time
+  compliance (PSE, app stores) as a light checklist; GDPR/COPPA/UK AADC as reference only.
 - **Q10** Confirm the differentiation axis (relationship-first + local fit recommended).
 - Later (blocked on Q6/Q7): daily/monthly report format + PDF; screen-time tracking;
   classification source; data retention.
