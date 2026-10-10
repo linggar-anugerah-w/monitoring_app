@@ -136,15 +136,14 @@ Then bring findings back and turn them into product decisions.
 ## Open questions awaiting the user (design-tree frontier)
 - **Q6** Confirm core signal: browser-based domain + classification (recommended) vs. network vs.
   screenshots.
-- **Q7** Confirm v1 platform (browser extension recommended; Android/iOS later — iOS is heavily
-  restricted).
+- **Q7** v1 platform — **settled by Q12 + front 1: Android child app** on the child's own
+  phone (browser extension parked). Front 5 still checks technical feasibility.
 - **Q9** Jurisdiction — *settled for research:* Indonesia, own-family use; publish-time
   compliance (PSE, app stores) as a light checklist; GDPR/COPPA/UK AADC as reference only.
 - **Q10** Confirm the differentiation axis (relationship-first + local fit recommended).
-- **Q11** *(new, from front 1)* Shared devices: young children often use a parent's phone.
-  Support only the child's own device, or a separate Android user/profile per child?
-- **Q12** *(new, from front 1)* For own-family use: what device(s) does your child actually use
-  (own Android phone? shared? laptop?) — this decides Q7 for your case.
+- **Q11** Shared devices — **settled:** v1 supports **only the child's own device** (no
+  install on a parent's/shared phone).
+- **Q12** Child's device — **settled:** the user's child has their **own Android phone**.
 - Later (blocked on Q6/Q7): daily/monthly report format + PDF; screen-time tracking;
   classification source; data retention.
 
