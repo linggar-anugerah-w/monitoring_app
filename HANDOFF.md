@@ -67,7 +67,8 @@ to the child around age 11 so the child understands it as a safeguard.
 ## Immediate next step: field research (in progress)
 
 **Progress:** front 1 ✅ (`research/01-family-context.md`) · front 2 ✅
-(`research/02-competitors.md`) · fronts 3–5 pending (run one at a time; user reviews between
+(`research/02-competitors.md`) · front 3 ✅ (`research/03-child-safety-evidence.md`) ·
+fronts 4–5 pending (run one at a time; user reviews between
 fronts).
 
 **Front 1 headline:** Indonesian children are online on **Android phones** (students: 86% phone
@@ -82,6 +83,12 @@ Telkomsel ProtekSi Kecil) or **time/limit controllers** (Google Family Link — 
 strong on limits). None turns activity into **age-appropriate, Indonesian-context meaning +
 conversation prompts**. → that is the gap (Q10); v1 leaves enforcement to Family Link (Q13,
 settled).
+
+**Front 3 headline:** heavy monitoring correlates with *more* risk and less trust; parents learn
+most from what children choose to tell them; **talking (active mediation) reduces harm**.
+**No evidence for disclosing at ~age 11** — UN CRC GC 25 and the UK Children's Code point to
+telling the child **from day one** with an obvious sign while monitoring runs (Q14). Oversight
+should taper by age (Q15). Co-viewable is promising but unproven.
 
 ### Research scope decisions
 - **Purpose:** research is **decision-driving**. Every front ends with a "therefore we decide X"
@@ -155,6 +162,10 @@ Then bring findings back and turn them into product decisions.
   Downtime, app approvals, site blocking) to Family Link (+ TRUST+/Nawala DNS) and builds only
   the **insight + conversation layer** (safety classification, daily digest with conversation
   prompts, co-viewable reports).
+- **Q14** *(new, from front 3)* Replace "disclose around age 11" with **"child told from day
+  one, age-appropriate explanation, obvious sign while running"**? *(Recommended.)*
+- **Q15** *(new, from front 3)* Age-tapered reporting: 6–9 full detail + co-use; 10–12 detail,
+  child sees same report; 13–16 categories/flags only, child reviews first? *(Recommended.)*
 - Later (blocked on Q6/Q7): daily/monthly report format + PDF; screen-time tracking;
   classification source; data retention.
 
