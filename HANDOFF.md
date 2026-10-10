@@ -38,6 +38,7 @@ to the child around age 11 so the child understands it as a safeguard.
 - **Audience:** a single parent monitoring their own child.
 - **Child:** under 17; age derived from **birth year only**.
 - **Posture:** **transparent / known to child** (covert capture is rejected and out of scope).
+- **Commercial model:** **personal/family project, free** — not a commercial product.
 - **Status:** early **prototype**; the user intends to consult child-safety experts to make it
   more of a safeguard than a monitor.
 
@@ -54,17 +55,37 @@ to the child around age 11 so the child understands it as a safeguard.
 - Screenshot/image capture as the primary signal — **shelved** in favour of domain + safety
   classification (revisit later only with expert input and transparently).
 
-## Immediate next step the user asked for: field research (grilling scope agreed, launch pending)
+## Immediate next step: field research (scope being grilled — round 1 settled, round 2 open)
 
-Fan out research across four fronts, in priority order:
-1. **Competitive landscape** — Bark, Qustodio, Google Family Link, Apple Screen Time, Canopy,
-   Aura, etc.: features, pricing, and *where they fail parents/kids* (the gaps to fill).
-2. **Child-safety & developmental evidence** — AAP, eSafety commissioners, academic studies on
+### Research scope decisions (grilling round 1)
+- **Purpose:** research is **decision-driving**. Every front ends with a "therefore we decide X"
+  memo against specific open questions (Q6 core signal, Q7 platform, Q10 differentiation,
+  classification source, data retention). Q6/Q7 stay provisional until research returns.
+- **Commercial model:** **personal/family project, free.** No pricing / willingness-to-pay
+  research. Classification must use **free/open sources** (no paid category APIs).
+- **Method:** **desk research only** (web sources). No parent interviews or expert-contact list
+  in this pass.
+- **Sources:** Indonesian- and English-language sources. Every claim cited; official sources
+  (government, AAP, eSafety, peer-reviewed) outrank blogs; sources older than ~3 years flagged
+  as dated.
+- **Output:** `research/` folder in the repo — one markdown file per front (findings, sources,
+  "decisions this informs"), plus `research/SUMMARY.md` that feeds back into this file.
+
+### Research fronts (priority order)
+1. **Indonesian family context** *(added in round 1; gates Q7)* — what devices Indonesian kids
+   actually use (Android dominance, shared devices), app vs. browser usage, parental mediation
+   attitudes. No willingness-to-pay.
+2. **Competitive landscape** — **Indonesian options only** for now (ISP parental controls e.g.
+   Telkomsel/IndiHome, TRUST+/Internet Positif, Nawala and similar DNS filters): features and
+   *where they fail parents/kids*.
+3. **Child-safety & developmental evidence** — AAP, eSafety commissioners, academic studies on
    monitoring-vs-trust, age-appropriateness, what actually keeps kids safer.
-3. **Legal & privacy** — minors' data consent, lawful collection, app-store policy (both stores
-   ban covert monitoring), Indonesia-specific rules.
-4. **Technical / classification** — site-safety classification methods (category DBs, ML, APIs),
-   accuracy, latency (~seconds target), cost.
+4. **Legal & privacy** *(settles Q9)* — deep on **Indonesia** (UU PDP incl. parental consent
+   for children's data, PP Tunas / PP 17/2025 applicability, PSE registration, individual vs.
+   entity) and **Google Play / App Store** parental-control policy; **light reference skim** of
+   GDPR / COPPA / UK Age-Appropriate Design Code for good practice.
+5. **Technical / classification** — free/open site-safety classification methods, accuracy,
+   latency (~seconds target).
 
 Then bring findings back and turn them into product decisions.
 
@@ -73,7 +94,8 @@ Then bring findings back and turn them into product decisions.
   screenshots.
 - **Q7** Confirm v1 platform (browser extension recommended; Android/iOS later — iOS is heavily
   restricted).
-- **Q9** Confirm jurisdiction (Indonesia assumed).
+- **Q9** Jurisdiction — *settled for research:* Indonesia (deep) + app-store policy; GDPR/COPPA/
+  UK AADC as light reference only.
 - **Q10** Confirm the differentiation axis (relationship-first + local fit recommended).
 - Later (blocked on Q6/Q7): daily/monthly report format + PDF; screen-time tracking;
   classification source; data retention.
