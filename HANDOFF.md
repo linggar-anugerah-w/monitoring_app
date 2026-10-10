@@ -80,7 +80,8 @@ games, WhatsApp), and young children often use a **parent's/shared phone**. → 
 **Front 2 headline:** existing options are either **blockers** (TRUST+/Nawala/ISP filters,
 Telkomsel ProtekSi Kecil) or **time/limit controllers** (Google Family Link — free, transparent,
 strong on limits). None turns activity into **age-appropriate, Indonesian-context meaning +
-conversation prompts**. → that is the gap (Q10); v1 may leave enforcement to Family Link (Q13).
+conversation prompts**. → that is the gap (Q10); v1 leaves enforcement to Family Link (Q13,
+settled).
 
 ### Research scope decisions
 - **Purpose:** research is **decision-driving**. Every front ends with a "therefore we decide X"
@@ -150,9 +151,10 @@ Then bring findings back and turn them into product decisions.
 - **Q11** Shared devices — **settled:** v1 supports **only the child's own device** (no
   install on a parent's/shared phone).
 - **Q12** Child's device — **settled:** the user's child has their **own Android phone**.
-- **Q13** *(new, from front 2)* Complement Google Family Link instead of rebuilding it: leave
-  limits/Downtime/app approvals/site blocking to Family Link (+ TRUST+/Nawala DNS) and build
-  only the insight + conversation layer? *(Recommended.)*
+- **Q13** Complement Google Family Link — **settled: yes.** v1 leaves enforcement (limits,
+  Downtime, app approvals, site blocking) to Family Link (+ TRUST+/Nawala DNS) and builds only
+  the **insight + conversation layer** (safety classification, daily digest with conversation
+  prompts, co-viewable reports).
 - Later (blocked on Q6/Q7): daily/monthly report format + PDF; screen-time tracking;
   classification source; data retention.
 

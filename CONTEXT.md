@@ -35,3 +35,6 @@ surveillance. See `HANDOFF.md` for the full guardrails.
   The taxonomy should reflect harms prevalent in Indonesia, not only US-centric categories.
 - **Own-family use** — the current distribution model: the parent installs the app for their own
   child; it is not published to an app store.
+- **Insight layer** — what this app builds in v1: classifying the child's app/site activity
+  and turning it into reports and conversation prompts. Contrast with **enforcement** (limits,
+  blocking, app approvals), which v1 leaves to Google Family Link and DNS filters.
