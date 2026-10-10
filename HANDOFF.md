@@ -138,4 +138,4 @@ Then bring findings back and turn them into product decisions.
 - Aligned PRD now lives in `PRD.md` (child-safety / transparency-first; realigns Issue #1).
 - Glossary of terms: see `CONTEXT.md`.
 - No code yet.
-- Working branch: `claude/ecstatic-wright-rhpvb3`.
+- Working branch: `research/child-online-safety-scope` (renamed from `claude/ecstatic-wright-rhpvb3`).
